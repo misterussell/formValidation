@@ -1,17 +1,26 @@
+// BUTTON TARGETER
 var submitButton = document.querySelector('.submitButton');
-var formFields = ['.firstName' , '.lastName' , '.email' , '.country' , '.bio' , '.phone' , '.affiliations' , '.occupation' , '.catName' , '.favGadget' , '.talent' , '.favDrink' , '.specialPower' , '.weapon' , '.comments'];
+// ARRAY FOR ID TYPES
+// var formFields = ['firstName' , 'lastName' , 'email' , 'country' , 'bio' , 'phone' , 'affiliations' , 'occupation' , 'catName' , 'favGadget' , 'talent' , 'favDrink' , 'specialPower' , 'weapon' , 'comments'];
+// STORAGE OBJECT
 var completedForm = {};
+// ARRAY FOR CLASS
+var formFields = ['.firstName' , '.lastName' , '.email' , '.country' , '.bio' , '.phone' , '.affiliations' , '.occupation' , '.catName' , '.favGadget' , '.talent' , '.favDrink' , '.specialPower' , '.weapon' , '.comments'];
 
-// var firstName = document.querySelector('.firstName');
 
-// defines a value of the value on the html page - this is an example
-// document.getElementsByClassName(formFields[0]).value = "maxwell";
-
-// logs a value of the html form element
-// console.log(document.getElementsByClassName(formFields[0]));
-
-// defines the completed form value from the UI
-// completedForm[formFields[0]] = document.getElementsByClassName(formFields[0]).value;
+// FOR ID
+// submitButton.addEventListener('click', function() {
+//   for(x = 0; x < formFields.length; x++) {
+//     if (document.getElementById(formFields[x]).value === '') {
+//       alert('You have not finished submitting information.');
+//       x = formFields.length + 1;
+//     } else {
+//       console.log("Thank you for submitting.");
+//       completedForm[formFields[x]] = document.getElementById(formFields[x]).value;
+//     }
+//   }
+//   console.log(completedForm);
+// });
 
 submitButton.addEventListener('click', function() {
   for(x = 0; x < formFields.length; x++) {
@@ -22,9 +31,9 @@ submitButton.addEventListener('click', function() {
     } else {
       // completedForm[formFields[0]] = firstName.value;
       // x = x + 1;
-      console.log("Thank you for submitting.");
       completedForm[formFields[x]] = document.querySelector(formFields[x]).value;
-      console.log(completedForm);
     }
   }
+  console.log("Thank you for submitting.");
+  console.log(completedForm);
 });

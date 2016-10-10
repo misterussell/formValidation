@@ -1,4 +1,21 @@
 body {
+  background: #98405f;
+  color: #eeeded;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 62.5%;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.peace-and-love {
+  position: fixed;
+  left: -1rem;
+  top: 2rem;
+  transform: rotate(40deg);
+  opacity: .5;
+  font-size: 10rem;
+  z-index: 1;
 }
 
 ul {
@@ -8,5 +25,32 @@ ul {
 }
 
 li {
-  margin: 1rem auto;
+  margin: 1rem;
+}
+
+input {
+  border: .1rem solid #eeeded;
+  border-radius: .25rem;
+  background: #98405f;
+  color: #eeeded;
+}
+
+select {
+  background: transparent;
+  color: #eeeded;
+  border: .05rem solid #eeeded;
+}
+
+input:required {
+  border: .1rem solid #5c05aa;
+}
+
+.extended {
+  height: 4rem;
+}
+
+button {
+  background: #eeeded;
+  border: 0;
+  border-radius: .25rem;
 }
