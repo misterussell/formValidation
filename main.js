@@ -41,7 +41,7 @@ submitButton.addEventListener('click', function() {
   }
 });
 
-// FOR COMPAIRING BY ID
+// FOR COMPAIRING BY ID - This will be removed to clean code
 // submitButton.addEventListener('click', function() {
 //   for(x = 0; x < formFields.length; x++) {
 //     if (document.getElementById(formFields[x]).value === '') {
