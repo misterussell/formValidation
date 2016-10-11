@@ -8,7 +8,7 @@ var completedForm = {};
 var formFields = ['.firstName' , '.lastName' , '.email' , '.country' , '.bio' , '.phone' , '.affiliations' , '.occupation' , '.catName' , '.favGadget' , '.talent' , '.favDrink' , '.specialPower' , '.weapon' , '.comments'];
 
 
-// FOR ID
+// FOR COMPAIRING BY ID
 // submitButton.addEventListener('click', function() {
 //   for(x = 0; x < formFields.length; x++) {
 //     if (document.getElementById(formFields[x]).value === '') {
