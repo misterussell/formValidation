@@ -1,27 +1,12 @@
-// BUTTON TARGETER
 var submitButton = document.querySelector('.submitButton');
-// ARRAY FOR ID TYPES
-// var formFields = ['firstName' , 'lastName' , 'email' , 'country' , 'bio' , 'phone' , 'affiliations' , 'occupation' , 'catName' , 'favGadget' , 'talent' , 'favDrink' , 'specialPower' , 'weapon' , 'comments'];
-// STORAGE OBJECT
-var completedForm = {};
-// ARRAY FOR CLASS
-var formFields = ['.firstName' , '.lastName' , '.email' , '.country' , '.bio' , '.phone' , '.affiliations' , '.occupation' , '.catName' , '.favGadget' , '.talent' , '.favDrink' , '.specialPower' , '.weapon' , '.comments'];
+var form = document.getElementById('contactInfo');
 
+// STORAGE OBJECTS
+var completedForm = {};
 var incompleteFields = {};
 
-// FOR COMPAIRING BY ID
-// submitButton.addEventListener('click', function() {
-//   for(x = 0; x < formFields.length; x++) {
-//     if (document.getElementById(formFields[x]).value === '') {
-//       alert('You have not finished submitting information.');
-//       x = formFields.length + 1;
-//     } else {
-//       console.log("Thank you for submitting.");
-//       completedForm[formFields[x]] = document.getElementById(formFields[x]).value;
-//     }
-//   }
-//   console.log(completedForm);
-// });
+// ARRAY FOR CLASS
+var formFields = ['.firstName' , '.lastName' , '.email' , '.country' , '.bio' , '.phone' , '.affiliations' , '.occupation' , '.catName' , '.favGadget' , '.talent' , '.favDrink' , '.specialPower' , '.weapon' , '.comments'];
 
 function setColor(element) {
   element.style.backgroundColor = '#86A344';
@@ -45,9 +30,5 @@ submitButton.addEventListener('click', function() {
     console.log(completedForm);
   } else {
     console.log('You have not finished submitting information. Please fill out the fields highlighted in green.');
-    // CONSOLE all values in the incomplete field
-    // for (var y in incompleteFields) {
-    //   console.log(incompleteFields[y]);
-    // }
   }
 });
