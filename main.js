@@ -1,27 +1,15 @@
-// BUTTON TARGETER
 var submitButton = document.querySelector('.submitButton');
+var form = document.getElementById('contactInfo');
+
 // ARRAY FOR ID TYPES
 // var formFields = ['firstName' , 'lastName' , 'email' , 'country' , 'bio' , 'phone' , 'affiliations' , 'occupation' , 'catName' , 'favGadget' , 'talent' , 'favDrink' , 'specialPower' , 'weapon' , 'comments'];
-// STORAGE OBJECT
-var completedForm = {};
+
 // ARRAY FOR CLASS
 var formFields = ['.firstName' , '.lastName' , '.email' , '.country' , '.bio' , '.phone' , '.affiliations' , '.occupation' , '.catName' , '.favGadget' , '.talent' , '.favDrink' , '.specialPower' , '.weapon' , '.comments'];
 
+// STORAGE OBJECTS
+var completedForm = {};
 var incompleteFields = {};
-
-// FOR COMPAIRING BY ID
-// submitButton.addEventListener('click', function() {
-//   for(x = 0; x < formFields.length; x++) {
-//     if (document.getElementById(formFields[x]).value === '') {
-//       alert('You have not finished submitting information.');
-//       x = formFields.length + 1;
-//     } else {
-//       console.log("Thank you for submitting.");
-//       completedForm[formFields[x]] = document.getElementById(formFields[x]).value;
-//     }
-//   }
-//   console.log(completedForm);
-// });
 
 function setColor(element) {
   element.style.backgroundColor = '#86A344';
@@ -42,6 +30,7 @@ submitButton.addEventListener('click', function() {
   }
   if (formCompletion) {
     alert("Thank you for submitting. We will be in touch!");
+    form.reset();
     console.log(completedForm);
   } else {
     console.log('You have not finished submitting information. Please fill out the fields highlighted in green.');
@@ -51,3 +40,17 @@ submitButton.addEventListener('click', function() {
     // }
   }
 });
+
+// FOR COMPAIRING BY ID
+// submitButton.addEventListener('click', function() {
+//   for(x = 0; x < formFields.length; x++) {
+//     if (document.getElementById(formFields[x]).value === '') {
+//       alert('You have not finished submitting information.');
+//       x = formFields.length + 1;
+//     } else {
+//       console.log("Thank you for submitting.");
+//       completedForm[formFields[x]] = document.getElementById(formFields[x]).value;
+//     }
+//   }
+//   console.log(completedForm);
+// });
