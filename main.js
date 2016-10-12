@@ -28,6 +28,6 @@ submitButton.addEventListener('click', function() {
     form.reset();
     console.log(completedForm);
   } else {
-    console.log('You have not finished submitting information. Please fill out the fields highlighted in green.');
+    alert('You have not finished submitting information. Please fill out the fields highlighted in green.');
   }
 });
