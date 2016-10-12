@@ -15,7 +15,8 @@
     <h1>Contact Us</h1>
     <form class="contact-info" id="contactInfo">
       <ul>
-        <li>
+      <div class="column">
+          <li>
           <h2>FIRST NAME</h2>
           <input type="text" name="First Name" value="" class="firstName" id="firstName" required>
         </li>
@@ -42,6 +43,8 @@
           <h2>BIOGRAPHY</h2>
           <textarea name="Bio" value="" class="bio extended" id="bio"></textarea>
         </li>
+      </div>
+      <div class="column">
         <li>
           <h2>PHONE NUMBER</h2>
           <input type="text" name="Phone Number" value="" class="phone" id="phone" required>
@@ -67,6 +70,8 @@
           <h2>FAVORITE GADGET</h2>
           <input type="text" name="Favorite Gadget" value="" class="favGadget" id="favGadget">
         </li>
+      </div>
+      <div class="column">
         <li>
           <h2>TYPE OF TALENT</h2>
           <select  name="Talent" class="talent" id="talent" required>
@@ -95,6 +100,7 @@
         <li>
           <button type="button" name="submit" class="submitButton">Submit</button>
         </li>
+        </div>
       </ul>
     </form>
 

@@ -20,8 +20,6 @@ submitButton.addEventListener('click', function() {
       formCompletion = false;
       setColor(document.querySelector(formFields[x]));
     } else {
-      // completedForm[formFields[0]] = firstName.value;
-      // x = x + 1;
       completedForm[formFields[x]] = document.querySelector(formFields[x]).value;
     }
   }
